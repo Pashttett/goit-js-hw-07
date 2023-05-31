@@ -23,7 +23,3 @@ document.addEventListener('DOMContentLoaded', function () {
     captionPosition: 'bottom',
   });
 });
-
-  instance.show();
-
-console.log(galleryItems);
