@@ -17,9 +17,10 @@ function createGalleryMarkup(items) {
 const gallery = document.querySelector('.gallery');
 gallery.innerHTML = createGalleryMarkup(galleryItems);
 document.addEventListener('DOMContentLoaded', function () {
-  new SimpleLightbox('.gallery a', {
+  const instance = new SimpleLightbox('.gallery a', {
     captions: true,
     captionDelay: 250,
     captionPosition: 'bottom',
   });
+  instance.show();
 });
